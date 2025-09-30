@@ -38,7 +38,7 @@ jobs:
       with:
         login-server: ${{ env.AZURE_CONTAINER_REGISTRY }}
         username: ${{ env.AZURE_CONTAINER_REGISTRY_USERNAME }}
-        password: ${{ secrets.WEBAPPSECRET }}
+        password: ${{ secrets.CLOUDX_ASSOCIATE_MS_AZURE }}
 
     - name: Build and push Docker image to Azure Container Registry
       run: |
